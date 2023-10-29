@@ -1,0 +1,39 @@
+{
+  "name": "guyana_land_registry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ame_token" : "npx hardhat run scripts/custom_governance/deployToken.js --network ameChain",
+    "eduLoan" : "npx hardhat run scripts/proxy_loan.js --network mumbai",
+    "eduLoan_1" : "npx hardhat run scripts/test.js --network mumbai",
+    "tic" : "npx hardhat run scripts/deployTok.js --network mumbai",
+    "reg" : "npx hardhat run scripts/deployReg.js --network mumbai",
+    "buy" : "npx hardhat run scripts/depProxyTicketing.js --network mumbai",
+    "guy" : "npx hardhat run scripts/deployGuyana.js --network mumbai",
+    "nometa" : "npx hardhat run scripts/deployGuyanaWithoutMeta.js --network mumbai",
+    "FundReg" : "npx hardhat run scripts/deployRegistration.js --network mumbai",
+    "FundEscrow" : "npx hardhat run scripts/deployEscrow.js --network mumbai",
+    "mock" : "npx hardhat run scripts/deployMock.js --network mumbai",
+    "nft" : "npx hardhat run scripts/deployNFT.js --network mumbai"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts-ethereum-package": "^2.2.3",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@openzeppelin/hardhat-upgrades": "^1.20.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.11.2",
+    "hardhat-contract-sizer": "^2.6.1",
+    "web3": "^1.7.4"
+  }
+}
